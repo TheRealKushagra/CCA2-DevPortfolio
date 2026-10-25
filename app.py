@@ -146,6 +146,8 @@ def home():
     """
 
 @app.route("/health")
+
+# Updated for the second CI/CD pipeline execution.
 def health():
     return {"status": "healthy"}, 200
 
