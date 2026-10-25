@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/YOUR_USERNAME/CCA2-DevPortfolio.git'
+                    url: 'https://github.com/TheRealKushagra/CCA2-DevPortfolio.git'
             }
         }
 
