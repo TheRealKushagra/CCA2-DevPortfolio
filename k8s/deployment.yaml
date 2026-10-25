@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devportfolio
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devportfolio
+  template:
+    metadata:
+      labels:
+        app: devportfolio
+    spec:
+      containers:
+        - name: devportfolio
+          image: YOUR_DOCKERHUB_USERNAME/cca2-devportfolio:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
